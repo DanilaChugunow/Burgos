@@ -210,6 +210,7 @@ button{
 .dop-box{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .dop{
     margin-bottom: 90px;
@@ -282,14 +283,248 @@ footer{
     text-transform: uppercase;
     color: #fbb731;
 }
+.header{
+    background:linear-gradient(180deg, #0c4c7b 0%, #1e2f40 100%);;
+    padding: 170px 0;
+    margin-bottom: 185px;
+}
+.burger-menu{
+    display: none !important;
+}
+.modal{
+    display: none;
+}
+
+.time{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fbb731;
+    margin-bottom: 10px;
+}
+.main-t{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #faf9f9;
+    max-width: 580px;
+    margin-bottom: 40px;
+}
+.ad{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 140%;
+    color: #dedede;
+    max-width: 522px;
+    margin-bottom: 42px;
+}
+.header-banner>a{
+    padding: 20px 47px;
+    background:#fbb731;
+    border-radius: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #1e2f40;
+}
+.header-banner{
+    position: relative;
+}
+.burger-bg{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.burger-bg>img{
+    width: 829px;
+    height: 861px;
+    position: absolute;
+    top:0;
+    right: -26px;
+    z-index: 2;
+}
+.linegradient{
+    width: 432px;
+    height: 823px;
+    background: linear-gradient(2deg, #f37335 0%, #fbb731 100%, #fdc830 100%);
+    position: absolute;
+    top:0;
+    right:143px;
+    z-index: 1;
+}
+
 
 
 
 
 /* adaptiv */
-@media (max-width:768px){
+@media (max-width:768px) {
     .container{
         padding: 0 15px;
+    }
+    .menu>li {
+        margin-right: 22px;
+    }
+    .header-bottom{
+        background-position: center;
+    }
+    .banner{
+        background-position-x: -74px;
+        padding-left: 40px;
+        margin-top: 72px;
+        margin-bottom: 80px;
+    }
+    .burgers-item>img{
+        width: 359px;
+    }
+    .basic{
+        margin-right: 86px;
+        margin-left: 77px;
+        margin-top: 0px;
+    }
+    .info-basic{
+        margin-right: 0;
+    }
+    .tel{
+        margin-left: 77px;
+        margin-top: 13px;
+    }
+}
+@media (max-width:320px) {
+    .container{
+        max-width: 290px;
+    }
+    .burger-menu{
+        display: flex !important;
+    }
+    .menu{
+        display: none;
+    }
+    .logo>img{
+        width: 116px;
+    }
+    .burgers-item>img {
+        width: 139px;
+    }
+    .burgers-item>h3{
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    .burgers-item>p{
+        margin-bottom: 7px;
+    }
+    .burgers-item>button{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .basic {
+            margin-right: 0px;
+            margin-left: -64px;
+            margin-top: 29px;
+        }
+    .tel{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .header-bottom{
+        padding-top: 55px;
+        padding-bottom: 55px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .header-bottom>h1{
+        font-size: 38px;
+    }
+    .banner-bottom{
+        font-size: 12px;
+    }
+    .header-bottom{
+        background-image: url('../img/banner320.png');
+    }
+    .banner{
+        margin-top: 33px;
+        margin-bottom: 50px;
+        padding: 34px 0;
+        padding-left: 15px;       
+        background-image: url('../img/nab320.png');
+        background-position-x: unset;
+    }
+    .text-banner{
+        max-width: 247px;
+    }
+    .marker{
+        margin-bottom: 3px;
+    }
+    .banner>button{
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    .title{
+        font-size: 27px;
+        margin-bottom: 24px;
+    }
+    .tel{
+        order: -1;
+        margin-left: 51px;
+    }
+    .info-basic{
+        margin-top: 33px;
+        margin-left: -64px;
+    }
+    footer{
+        padding: 61px 0;
+    }
+    .modal{
+        display: none;
+        position: absolute;
+        top: 20px;
+        background: #fff8dc;
+        padding: 40px 0;
+        width: 100%;
+    }
+    .close{
+        background: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .menu-modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-modal>li{
+        margin-bottom: 23px;
+    }
+    .menu-modal>li:last-child{
+        margin-bottom: 0;
+    }
+    .menu-modal>li>a{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #443737;
+    }
+    .active{
+        position: relative;
+    }
+    .active::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 3px;
+        border-radius: 1px;
+        background: #ffc725;
+        bottom: 0px;
+        left: 0px;
     }
 }
 
