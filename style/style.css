@@ -347,7 +347,7 @@ footer{
     height: 861px;
     position: absolute;
     top:0;
-    right: -26px;
+    right: 4px;
     z-index: 2;
 }
 .linegradient{
@@ -356,10 +356,92 @@ footer{
     background: linear-gradient(2deg, #f37335 0%, #fbb731 100%, #fdc830 100%);
     position: absolute;
     top:0;
-    right:143px;
+    right:172px;
     z-index: 1;
 }
-
+.banners{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 186px;
+}
+.banner1{
+    height: 395px;
+    width: 580px;
+    background-image: url('../img/1ban.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 116px;
+}
+.mark{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 14px;
+    display: inline-block;
+    background-color: #f37335;
+    padding: 5px 18px;
+    margin-bottom: 3px;
+}
+.banner1>h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.b-sale{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+    max-width: 392.2px;
+}
+.banner2{
+    height: 395px;
+    width: 580px;
+    padding-top: 102px;
+    padding-left: 50px;
+    background-image: url('../img/2ban.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.banner2>h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 127%;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.banner2>p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.banner2>button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #1e2f40;
+    border-radius: 5px;
+    background: #fbb731;
+    padding: 20px 48px;
+}
 
 
 
@@ -395,6 +477,60 @@ footer{
     .tel{
         margin-left: 77px;
         margin-top: 13px;
+    }
+    .time{
+        font-size: 22px;
+        line-height: 124%;
+        margin-bottom: 7px;
+    }
+    .main-t{
+        font-size: 86px;
+        margin-bottom: 28px;
+    }
+    .ad{
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 385px;
+    }
+    .header-banner>a{
+        font-size: 13px;
+        line-height: 123%;
+        padding: 17px 40px;
+    }
+    .linegradient{
+        height: 515px;
+        width: 198px;
+        right: 10px;
+    }
+    .header{
+        padding-top: 42px;
+        padding-bottom: 122px;
+        padding-left: 28px;
+        overflow-x:hidden;
+        margin-bottom: 106px;
+    }
+    .burger-bg>img{
+        width: 496px;
+        height: 516px;
+        top: 81px;
+        right: -128px;
+    }
+    .banner1{
+        height: 298px;
+        width: 362.75px;
+        padding-top: 44px;
+        padding-left: 30px;
+        background-image: url('../img/ban1-768.png');
+    }
+    .banner2{
+        height: 298px;
+        width: 362.75px;
+        padding-top: 60px;
+        padding-left: 30.75px;
+        background-image: url('../img/ban2-768.png');
+    }
+    .banners{
+        margin-bottom: 140px;
     }
 }
 @media (max-width:320px) {
@@ -525,6 +661,73 @@ footer{
         background: #ffc725;
         bottom: 0px;
         left: 0px;
+    }
+    .linegradient{
+        display: none;
+    }
+    .burger-bg>img{
+        width: 298px;
+        height: 297px;
+        top: 296px;
+        left: ;
+    }
+    .time{
+        font-size: 14px;
+        line-height: 195%;
+    }
+    .main-t{
+        font-size: 58px;
+        line-height: 120%;
+    }
+    .ad{
+        font-size: 13px;
+        min-width: 277px;
+    }
+    .header{
+        padding-top: 42px;
+        padding-left: 15px;
+        padding-bottom: 166px;
+        margin-bottom: 95px;
+    }
+    .banners{
+        flex-wrap: wrap;
+        margin-bottom: 61px;
+    }
+    .banner1{
+        width: 320px;
+        height: 270px;
+        margin-bottom: 22px;
+    }
+    .banner2{
+        width: 320px;
+        height: 270px;
+    }
+    .mark{
+        padding: 3.5px 19px;
+        margin-bottom: 8px;
+    }
+    .banner1>h2{
+        margin-bottom: 4.5px;
+        font-size: 55px;
+        line-height: 138%;
+    }
+    .b-sale{
+        font-size: 13px;
+        line-height: 150%;
+        max-width: 247px;
+    }
+    .banner2>h2{
+        font-size: 39px;
+        line-height: 144%;
+        margin-bottom: 8.5px;
+    }
+    .banner2>p{
+        font-size: 15px;
+        line-height: 150%;
+        max-width: 266px;
+    }
+    .banner2>button{
+        padding: 18px 31px;
     }
 }
 
